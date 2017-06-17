@@ -1,0 +1,26 @@
+body {
+  font-family: 'Inconsolata';
+
+}
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 2rem;
+}
+
+a {
+  color: #292b2c;
+  &.underline {
+    transition: border 0.2s ease;
+    border-bottom: 1px solid grey;
+    &:hover{
+      text-decoration: none;
+      border-bottom: 1px solid #FFF;
+    }
+  }
+}
+
+.content-wrap {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}

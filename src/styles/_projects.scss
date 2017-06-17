@@ -1,0 +1,142 @@
+.color-scheme {
+	display: flex;
+	@media screen and (max-width: 768px) {
+		height: 4px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	span {
+		display: inline-block;
+		flex-grow: 1;
+		height: 100px;
+	}
+}
+
+.lightbox {
+	background-color: rgba(black,.5);
+	position: fixed;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.5s;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 10;
+	.lightbox-bg {
+		height: 100%;
+	}
+	.color-scheme {
+		height: 100%;
+		span {
+			transition: 1s;
+			height: 0;
+			$interval: 0.05;
+			@for $i from 1 through 5 {
+				&:nth-child(#{$i}) {
+					transition-delay: #{$interval}s;
+				}
+				$interval: $interval + $interval;
+			}
+		}
+	}
+
+	&-inner {
+		position: fixed;
+		top: 15%;
+		left: 5%;
+		//height: 70%;
+		width: 90%;
+		max-height: 80vh;
+		margin: auto;
+		//padding-top: 50px;
+		//transform: translate(-50%, -50%);
+		//background-color: white;
+		z-index: 2;
+		box-sizing: border-box;
+		overflow-y: scroll;
+
+		.inner-top {
+			position: absolute;
+			display: none;
+			top: 0;
+			border: 1px solid black;
+			height: 30px;
+			margin: 5px;
+			width: calc(95% - 20px);
+		}
+
+		.inner-content {
+			img {
+				width: 100%;
+				  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+			height: 80%;
+		}
+	}
+
+	&.lightbox-open {
+		visibility: visible;
+		opacity: 1;
+
+		.color-scheme {
+			span {
+				height: 100%;
+			}
+		}
+	}
+}
+
+.project-text {
+	p:last-child {
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.project-images {
+	overflow-x: hidden;
+	white-space: nowrap;
+
+	.thumb {
+		overflow: hidden;
+		display: inline-block;
+		height: 100px;
+		width: 140px;
+		margin-right: 10px;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+		img {
+			cursor: pointer;
+			display: block;
+			width: 130%;
+			min-height: 100%;
+			-ms-interpolation-mode: bicubic;
+			&.tall {}
+			&.wide {}
+		}
+	}
+
+	img {
+		display: inline;
+	}
+}
+
+.featherlight-content {
+	padding: 0 !important;
+	border-bottom: none!important;
+}
+
+button.close {
+	padding: 0;
+	cursor: pointer;
+	background: 0 0;
+	border: 0;
+	-webkit-appearance: none;
+	float: right;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1;
+	color: #FFF;
+	text-shadow: 0 1px 0 #fff;
+	opacity: 0.5;
+}

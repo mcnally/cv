@@ -1,0 +1,12 @@
+.cp_embed_wrapper {
+
+  /* required to see the handle */
+  background: white;
+  padding-bottom: 10px;
+
+  /* default height */
+  height: 400px;
+}
+.cp_embed_wrapper iframe {
+  //height: 100% !important;
+}
