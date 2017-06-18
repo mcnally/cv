@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react";
 
 export default class Header extends React.Component {
-
   render() {
     return (
       <header>
@@ -15,9 +14,14 @@ export default class Header extends React.Component {
             </div>
             <div className="col-md-6">
               <div className="float-md-right">
-                <a href="https://chrismcnally.co.uk">chrismcnally.co.uk</a>&nbsp;/&nbsp;
-                <a href="http://codepen.io/chrismcnally">codepen.io</a>&nbsp;/&nbsp;
-                <a href="https://uk.linkedin.com/in/chrismcnally1">linkedin.com</a>&nbsp;/&nbsp;
+                <a href="https://chrismcnally.co.uk">chrismcnally.co.uk</a>
+                &nbsp;/&nbsp;
+                <a href="http://codepen.io/chrismcnally">codepen.io</a>
+                &nbsp;/&nbsp;
+                <a href="https://uk.linkedin.com/in/chrismcnally1">
+                  linkedin.com
+                </a>
+                &nbsp;/&nbsp;
                 <a href="https://twitter.com/ChrisMcNallyWeb">twitter.com</a>
               </div>
             </div>
