@@ -198,11 +198,13 @@ module.exports = function(env) {
           }
         },
         {
+          test: /\.css$/,
+          use: cssLoader
+        },
+        {
           test: /\.scss$/,
           exclude: /node_modules/,
           use: cssLoader
-
-          //loader: "style-loader!css-loader!sass-loader"
         },
         {
           test: /\.(js|jsx)$/,
