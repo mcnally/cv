@@ -1,0 +1,153 @@
+body {
+  font-family: 'Inconsolata'; }
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 2rem; }
+
+a {
+  color: #292b2c; }
+  a.underline {
+    transition: border 0.2s ease;
+    border-bottom: 1px solid grey; }
+    a.underline:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #FFF; }
+
+.content-wrap {
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
+header {
+  margin-top: 50px;
+  margin-bottom: 60px; }
+  header .header-left h2 {
+    margin: 0 5px;
+    font-size: 1.45rem; }
+
+.color-scheme {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    .color-scheme {
+      height: 4px;
+      overflow: hidden;
+      margin-bottom: 20px; } }
+  .color-scheme span {
+    display: inline-block;
+    flex-grow: 1;
+    height: 100px; }
+
+.lightbox {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10; }
+  .lightbox .lightbox-bg {
+    height: 100%; }
+  .lightbox .color-scheme {
+    height: 100%; }
+    .lightbox .color-scheme span {
+      transition: 1s;
+      height: 0; }
+      .lightbox .color-scheme span:nth-child(1) {
+        transition-delay: 0.05s; }
+      .lightbox .color-scheme span:nth-child(2) {
+        transition-delay: 0.1s; }
+      .lightbox .color-scheme span:nth-child(3) {
+        transition-delay: 0.2s; }
+      .lightbox .color-scheme span:nth-child(4) {
+        transition-delay: 0.4s; }
+      .lightbox .color-scheme span:nth-child(5) {
+        transition-delay: 0.8s; }
+  .lightbox-inner {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    max-height: 80vh;
+    margin: auto;
+    z-index: 2;
+    box-sizing: border-box;
+    overflow-y: scroll; }
+    .lightbox-inner .inner-top {
+      position: absolute;
+      display: none;
+      top: 0;
+      border: 1px solid black;
+      height: 30px;
+      margin: 5px;
+      width: calc(95% - 20px); }
+    .lightbox-inner .inner-content {
+      height: 80%; }
+      .lightbox-inner .inner-content img {
+        width: 100%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .lightbox.lightbox-open {
+    visibility: visible;
+    opacity: 1; }
+    .lightbox.lightbox-open .color-scheme span {
+      height: 100%; }
+
+@media screen and (min-width: 768px) {
+  .project-text p:last-child {
+    margin-bottom: 0; } }
+
+.project-images {
+  overflow-x: hidden;
+  white-space: nowrap; }
+  .project-images .thumb {
+    overflow: hidden;
+    display: inline-block;
+    height: 100px;
+    width: 140px;
+    margin-right: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .project-images .thumb img {
+      cursor: pointer;
+      display: block;
+      width: 130%;
+      min-height: 100%;
+      -ms-interpolation-mode: bicubic; }
+  .project-images img {
+    display: inline; }
+
+.featherlight-content {
+  padding: 0 !important;
+  border-bottom: none !important; }
+
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5; }
+
+.cp_embed_wrapper {
+  /* required to see the handle */
+  background: white;
+  padding-bottom: 10px;
+  /* default height */
+  height: 400px; }
+
+/*
+@todo stop using react-image-modal so i dont ned to use !important :(
+*/
+.ril-outer {
+  background-color: rgba(0, 0, 0, 0.3) !important; }
+
+.toolbar.ril-toolbar {
+  background-color: transparent !important; }
+
+/*# sourceMappingURL=style-ca87c151.css.map*/

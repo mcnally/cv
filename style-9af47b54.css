@@ -1,0 +1,153 @@
+body {
+  font-family: 'Inconsolata'; }
+
+h1 {
+  font-family: 'Merriweather';
+  font-size: 2rem; }
+
+a {
+  color: #292b2c; }
+  a.__lsu {
+    transition: border 0.2s ease;
+    border-bottom: 1px solid grey; }
+    a.__lsu:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #FFF; }
+
+._1f9ft {
+  margin-top: 30px;
+  margin-bottom: 60px; }
+
+header {
+  margin-top: 50px;
+  margin-bottom: 60px; }
+  header ._3L8kA h2 {
+    margin: 0 5px;
+    font-size: 1.45rem; }
+
+._3HuyJ {
+  display: flex; }
+  @media screen and (max-width: 768px) {
+    ._3HuyJ {
+      height: 4px;
+      overflow: hidden;
+      margin-bottom: 20px; } }
+  ._3HuyJ span {
+    display: inline-block;
+    flex-grow: 1;
+    height: 100px; }
+
+._3zNiF {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 10; }
+  ._3zNiF ._20Zcw {
+    height: 100%; }
+  ._3zNiF ._3HuyJ {
+    height: 100%; }
+    ._3zNiF ._3HuyJ span {
+      transition: 1s;
+      height: 0; }
+      ._3zNiF ._3HuyJ span:nth-child(1) {
+        transition-delay: 0.05s; }
+      ._3zNiF ._3HuyJ span:nth-child(2) {
+        transition-delay: 0.1s; }
+      ._3zNiF ._3HuyJ span:nth-child(3) {
+        transition-delay: 0.2s; }
+      ._3zNiF ._3HuyJ span:nth-child(4) {
+        transition-delay: 0.4s; }
+      ._3zNiF ._3HuyJ span:nth-child(5) {
+        transition-delay: 0.8s; }
+  ._23-GB {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    max-height: 80vh;
+    margin: auto;
+    z-index: 2;
+    box-sizing: border-box;
+    overflow-y: scroll; }
+    ._23-GB ._3iq3e {
+      position: absolute;
+      display: none;
+      top: 0;
+      border: 1px solid black;
+      height: 30px;
+      margin: 5px;
+      width: calc(95% - 20px); }
+    ._23-GB .R9SHl {
+      height: 80%; }
+      ._23-GB .R9SHl img {
+        width: 100%;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  ._3zNiF.B3ACy {
+    visibility: visible;
+    opacity: 1; }
+    ._3zNiF.B3ACy ._3HuyJ span {
+      height: 100%; }
+
+@media screen and (min-width: 768px) {
+  ._33o7j p:last-child {
+    margin-bottom: 0; } }
+
+._2vbTp {
+  overflow-x: hidden;
+  white-space: nowrap; }
+  ._2vbTp ._1bgRI {
+    overflow: hidden;
+    display: inline-block;
+    height: 100px;
+    width: 140px;
+    margin-right: 10px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1); }
+    ._2vbTp ._1bgRI img {
+      cursor: pointer;
+      display: block;
+      width: 130%;
+      min-height: 100%;
+      -ms-interpolation-mode: bicubic; }
+  ._2vbTp img {
+    display: inline; }
+
+._3kFmh {
+  padding: 0 !important;
+  border-bottom: none !important; }
+
+button.dbxit {
+  padding: 0;
+  cursor: pointer;
+  background: 0 0;
+  border: 0;
+  -webkit-appearance: none;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #FFF;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5; }
+
+._1paox {
+  /* required to see the handle */
+  background: white;
+  padding-bottom: 10px;
+  /* default height */
+  height: 400px; }
+
+/*
+@todo stop using react-image-modal so i dont ned to use !important :(
+*/
+._3Pn9f {
+  background-color: rgba(0, 0, 0, 0.3) !important; }
+
+._2eydt._3-zqt {
+  background-color: transparent !important; }
+
+/*# sourceMappingURL=style-9af47b54.css.map*/
