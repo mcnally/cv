@@ -17,8 +17,10 @@ export default class Project extends React.Component {
   }
 
   getTitle() {
-    return this.props.link !== undefined
-      ? <a className="underline" href={this.props.link}>{this.props.title}</a>
+    return this.props.link !== ""
+      ? <a target="_blank" className="underline" href={this.props.link}>
+          {this.props.title}
+        </a>
       : this.props.title;
   }
 

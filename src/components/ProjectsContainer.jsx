@@ -16,6 +16,7 @@ export default class ProjectsContainer extends React.Component {
               return (
                 <div key={index}>
                   <Project
+                    link={project.fields.link}
                     key={index}
                     index={index}
                     title={project.title.rendered}
